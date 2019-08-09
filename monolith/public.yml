@@ -32,8 +32,8 @@ couch_dbs:
     password: "{{ localsettings_private.COUCH_PASSWORD }}"
     is_https: False
 
-server_email: commcare@monolith.commcarehq.test
-default_from_email: commcare@monolith.commcarehq.test
+server_email: apps@projectbalance.com
+default_from_email: apps@projectbalance.com
 root_email: /dev/null
 
 BROKER_URL: 'redis://localhost:6379/0'
@@ -43,13 +43,12 @@ KSPLICE_ACTIVE: no
 DATADOG_ENABLED: False
 
 nameservers: []
-internal_domain_name: 'commcarehq.test'
+#internal_domain_name: 'commcarehq.test'
 
 TWO_FACTOR_GATEWAY_ENABLED: False
 
 localsettings:
-  ALLOWED_HOSTS:
-    - 'monolith.commcarehq.test'
+  ALLOWED_HOSTS: []
   BANK_ADDRESS: ~
   BANK_NAME: ~
   BANK_SWIFT_CODE: ~
@@ -70,15 +69,15 @@ localsettings:
   HUBSPOT_API_ID:
   HUBSPOT_API_KEY:
   INVOICE_FROM_ADDRESS:
-    'name': "Dimagi, Inc."
-    'first_line': "585 Massachusetts Ave"
-    'city': "Cambridge"
-    'region': "MA"
-    'postal_code': "02139"
+    'name': "ITech"
+    'first_line': ""
+    'city': "Seattle"
+    'region': "WA"
+    'postal_code': ""
     'country': "US"
-    'phone_number': "(617) 649-2214"
-    'email': "accounts@dimagi.com"
-    'website': "http://www.dimagi.com"
+    'phone_number': "(000) 555-1111"
+    'email': "apps@projectbalance.com"
+    'website': "http://www.go2itech.org/category/countries/zimbabwe/"
   INVOICE_PREFIX: INC-
   INVOICE_STARTING_NUMBER: 5000
   J2ME_ADDRESS: ''
@@ -89,7 +88,7 @@ localsettings:
   REDIS_HOST: "localhost"
   REDIS_PORT: '6379'
   REMINDERS_QUEUE_ENABLED: False
-  SMS_GATEWAY_URL: 'http://gw1.promessaging.com/sms.php'
+  SMS_GATEWAY_URL: ''
   SMS_QUEUE_ENABLED: False
 #  STATIC_ROOT:
   ENABLE_PRELOGIN_SITE: False
