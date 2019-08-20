@@ -32,9 +32,26 @@ couch_dbs:
     password: "{{ localsettings_private.COUCH_PASSWORD }}"
     is_https: False
 
-server_email: apps@projectbalance.com
-default_from_email: apps@projectbalance.com
-root_email: /dev/null
+server_email: no-reply@itech-zimbabwe.org
+default_from_email: no-reply@itech-zimbabwe.org
+#root_email: /dev/null
+cchq_bug_report_email: no-reply@itech-zimbabwe.org
+root_email: no-reply@itech-zimbabwe.org
+server_admin_email: no-reply@itech-zimbabwe.org
+support_email: no-reply@itech-zimbabwe.org
+probono_support_email: no-reply@itech-zimbabwe.org
+accounts_email: no-reply@itech-zimbabwe.org
+data_email: no-reply@itech-zimbabwe.org
+subscription_change_email: no-reply@itech-zimbabwe.org
+internal_subscription_change_email: no-reply@itech-zimbabwe.org
+billing_email: no-reply@itech-zimbabwe.org
+invoicing_contact_email: no-reply@itech-zimbabwe.org
+growth_email: no-reply@itech-zimbabwe.org
+master_list_email: no-reply@itech-zimbabwe.org
+report_builder_add_on_email: no-reply@itech-zimbabwe.org
+eula_change_email: no-reply@itech-zimbabwe.org
+contact_email: no-reply@itech-zimbabwe.org
+soft_assert_email: no-reply@itech-zimbabwe.org
 
 BROKER_URL: 'redis://localhost:6379/0'
 
@@ -43,12 +60,13 @@ KSPLICE_ACTIVE: no
 DATADOG_ENABLED: False
 
 nameservers: []
-#internal_domain_name: 'commcarehq.test'
+internal_domain_name: 'itech-zimbabwe.org'
 
 TWO_FACTOR_GATEWAY_ENABLED: False
 
 localsettings:
-  ALLOWED_HOSTS: []
+  ALLOWED_HOSTS:
+    - '197.211.237.144'
   BANK_ADDRESS: ~
   BANK_NAME: ~
   BANK_SWIFT_CODE: ~
@@ -61,8 +79,8 @@ localsettings:
   COUCH_USERNAME: "{{ localsettings_private.COUCH_USERNAME }}"
   COUCH_STALE_QUERY: 'update_after'
   DEPLOY_MACHINE_NAME: "{{ ansible_hostname }}"
-  EMAIL_SMTP_HOST: 'localhost'
-  EMAIL_SMTP_PORT: 25
+  EMAIL_SMTP_HOST: 'smtp.socketlabs.com'
+  EMAIL_SMTP_PORT: 587
   EMAIL_USE_TLS: no
   ENABLE_SOFT_ASSERT_EMAILS: False
   HQ_INSTANCE: monolith
@@ -76,7 +94,7 @@ localsettings:
     'postal_code': ""
     'country': "US"
     'phone_number': "(000) 555-1111"
-    'email': "apps@projectbalance.com"
+    'email': "no-reply@itech-zimbabwe.org"
     'website': "http://www.go2itech.org/category/countries/zimbabwe/"
   INVOICE_PREFIX: INC-
   INVOICE_STARTING_NUMBER: 5000
@@ -93,7 +111,7 @@ localsettings:
 #  STATIC_ROOT:
   ENABLE_PRELOGIN_SITE: False
   ENTERPRISE_MODE: True
-  RESTRICT_DOMAIN_CREATION: True
+  RESTRICT_DOMAIN_CREATION: False
 
 PY3_RUN_CELERY_BEAT: False
 PY3_RUN_CELERY_FLOWER: False
