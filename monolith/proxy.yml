@@ -1,4 +1,4 @@
-SITE_HOST: 'my.site.url'
+SITE_HOST: 'zdipqa.itech-zimbabwe.org'
 
 special_sites: []
 fake_ssl_cert: True

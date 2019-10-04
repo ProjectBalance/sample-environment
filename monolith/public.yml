@@ -35,22 +35,22 @@ couch_dbs:
 server_email: no-reply@itech-zimbabwe.org
 default_from_email: no-reply@itech-zimbabwe.org
 #root_email: /dev/null
-cchq_bug_report_email: no-reply@itech-zimbabwe.org
+cchq_bug_report_email: kwirirai@itech-zimbabwe.org
 root_email: no-reply@itech-zimbabwe.org
-server_admin_email: no-reply@itech-zimbabwe.org
-support_email: no-reply@itech-zimbabwe.org
-probono_support_email: no-reply@itech-zimbabwe.org
+server_admin_email: kwirirai@itech-zimbabwe.org
+support_email: kwirirai@itech-zimbabwe.org
+probono_support_email: kwirirai@itech-zimbabwe.org
 accounts_email: no-reply@itech-zimbabwe.org
-data_email: no-reply@itech-zimbabwe.org
+data_email: kwirirai@itech-zimbabwe.org
 subscription_change_email: no-reply@itech-zimbabwe.org
 internal_subscription_change_email: no-reply@itech-zimbabwe.org
 billing_email: no-reply@itech-zimbabwe.org
 invoicing_contact_email: no-reply@itech-zimbabwe.org
 growth_email: no-reply@itech-zimbabwe.org
 master_list_email: no-reply@itech-zimbabwe.org
-report_builder_add_on_email: no-reply@itech-zimbabwe.org
+report_builder_add_on_email: kwirirai@itech-zimbabwe.org
 eula_change_email: no-reply@itech-zimbabwe.org
-contact_email: no-reply@itech-zimbabwe.org
+contact_email: kwirirai@itech-zimbabwe.org
 soft_assert_email: no-reply@itech-zimbabwe.org
 
 BROKER_URL: 'redis://localhost:6379/0'
@@ -66,7 +66,8 @@ TWO_FACTOR_GATEWAY_ENABLED: False
 
 localsettings:
   ALLOWED_HOSTS:
-    - '197.211.237.144'
+    - '192.168.100.21'
+    - 'zdipqa.itech-zimbabwe.org'
   BANK_ADDRESS: ~
   BANK_NAME: ~
   BANK_SWIFT_CODE: ~
@@ -87,15 +88,15 @@ localsettings:
   HUBSPOT_API_ID:
   HUBSPOT_API_KEY:
   INVOICE_FROM_ADDRESS:
-    'name': "ITech"
-    'first_line': ""
-    'city': "Seattle"
-    'region': "WA"
-    'postal_code': ""
+    'name': "Itech Zimbabwe"
+    'first_line': "."
+    'city': "."
+    'region': "."
+    'postal_code': "02139"
     'country': "US"
-    'phone_number': "(000) 555-1111"
+    'phone_number': "(617) 649-2214"
     'email': "no-reply@itech-zimbabwe.org"
-    'website': "http://www.go2itech.org/category/countries/zimbabwe/"
+    'website': "http://www.itech-zimbabwe.org"
   INVOICE_PREFIX: INC-
   INVOICE_STARTING_NUMBER: 5000
   J2ME_ADDRESS: ''
@@ -106,7 +107,7 @@ localsettings:
   REDIS_HOST: "localhost"
   REDIS_PORT: '6379'
   REMINDERS_QUEUE_ENABLED: False
-  SMS_GATEWAY_URL: ''
+  SMS_GATEWAY_URL: 'http://gw1.promessaging.com/sms.php'
   SMS_QUEUE_ENABLED: False
 #  STATIC_ROOT:
   ENABLE_PRELOGIN_SITE: False
