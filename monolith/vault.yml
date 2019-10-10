@@ -1,26 +1,26 @@
 secrets:
-  ECRYPTFS_PASSWORD: 'CHANGE ME'
+  ECRYPTFS_PASSWORD: 'CHANGE_ME'
   KSPLICE_ACTIVATION_KEY:
   DATADOG_API_KEY: null
   DATADOG_APP_KEY: null
-  HAPROXY_STATS_PASSWORD: 'CHANGE ME'
-  SUPERVISOR_HTTP_USERNAME: 'CHANGE ME'
-  SUPERVISOR_HTTP_PASSWORD: 'CHANGE ME'
+  HAPROXY_STATS_PASSWORD: 'CHANGE_ME'
+  SUPERVISOR_HTTP_USERNAME: 'CHANGE_ME'
+  SUPERVISOR_HTTP_PASSWORD: 'CHANGE_ME'
   POSTGRES_USERS:
     commcare:
-      username: 'CHANGE ME'
-      password: 'CHANGE ME'
+      username: 'CHANGE_ME'
+      password: 'CHANGE_ME'
     devreadonly:
-      username: 'CHANGE ME'
-      password: 'CHANGE ME'
+      username: 'CHANGE_ME'
+      password: 'CHANGE_ME'
       role_attr_flags: 'NOSUPERUSER,NOCREATEROLE,NOCREATEDB'
       privs:
         -
           privs: SELECT
           objs: ALL_IN_SCHEMA
     replication:
-        username: 'CHANGE ME'
-        password: 'CHANGE ME'
+        username: 'CHANGE_ME'
+        password: 'CHANGE_ME'
         role_attr_flags: 'LOGIN,REPLICATION'
 
 localsettings_private:
@@ -30,19 +30,19 @@ localsettings_private:
   BOOKKEEPER_CONTACT_EMAILS: []
   BITLY_APIKEY: ''
   BITLY_LOGIN: ''
-  COUCH_PASSWORD: 'CHANGE ME'
-  COUCH_USERNAME: 'CHANGE ME'
+  COUCH_PASSWORD: 'CHANGE_ME'
+  COUCH_USERNAME: 'CHANGE_ME'
   DROPBOX_KEY: ''
   DROPBOX_SECRET: ''
   EMAIL_LOGIN: ''
   EMAIL_PASSWORD: ''
-  FORMPLAYER_INTERNAL_AUTH_KEY: 'CHANGE ME'
+  FORMPLAYER_INTERNAL_AUTH_KEY: 'CHANGE_ME'
   GMAPS_API_KEY: ''
   GOOGLE_ANALYTICS_API_ID: ''
   HUBSPOT_API_ID: ''
   HUBSPOT_API_KEY: ''
   JAR_KEY_PASS: ''
   JAR_STORE_PASS: ''
-  SECRET_KEY: 'CHANGE ME'
+  SECRET_KEY: 'CHANGE_ME'
 
-ansible_sudo_pass: 'CHANGE ME'
+ansible_sudo_pass: 'CHANGE_ME'
